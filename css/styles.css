@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #363636;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.button--gray, .button--orange {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 100px;
+}
+
+.header {
+  margin: 1% auto;
+}
+
+.nav {
+  width: 90%;
+  margin: 0% auto;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1%;
+}
+
+.nav__thumbnail {
+  flex-grow: 1;
+}
+
+.nav__img {
+  width: 30%;
+}
+
+.nav__content {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.nav__ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav__li {
+  flex-grow: 1;
+  justify-content: center;
+  list-style: none;
+  font-weight: 300;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f26522;
+  padding: 7% 15%;
+  font-weight: 500;
+  transition: all 300ms;
+}
+.nav__button:hover {
+  background-color: #363636;
+}
+
+.image {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.image__img {
+  width: 100%;
+}
+
+.description {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 45%;
+}
+
+.description__tittle {
+  font-size: 35px;
+  color: #f26522;
+}
+
+.description__subtittle {
+  font-size: 50px;
+  color: #f26522;
+}
+
+.description__span {
+  font-size: 50px;
+  color: #fff;
+}
+
+.description__text {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+.button--orange {
+  background-color: #f26522;
+  margin: 1%;
+  transition: all 300ms;
+}
+.button--orange:hover {
+  background-color: #363636;
+}
+
+.info {
+  width: 90%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+
+.info__card1 {
+  background-image: url(../assets/img/siblings-817369_640.jpg);
+  background-position: center;
+}
+
+.info__card2 {
+  background-image: url(../assets/img/pair-3798371_1280.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.opacity-orange {
+  background-color: rgba(242, 101, 34, 0.9);
+  padding: 7%;
+  height: 100%;
+}
+
+.opacity-gray {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 4%;
+  height: 100%;
+}
+
+.info__tittle {
+  color: #363636;
+  font-size: 24px;
+  padding-bottom: 1%;
+}
+
+.info__subtittle {
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 2%;
+}
+
+.info__text {
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.info__tittle2 {
+  color: #f26522;
+  font-size: 24px;
+  padding-bottom: 1%;
+}
+
+.button--gray {
+  background-color: #363636;
+  margin: 1%;
+  transition: all 300ms;
+}
+.button--gray:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 100%;
+  height: 15px;
+  margin: 0px auto;
+  margin-bottom: 13px;
+}
+
+.bar__progress {
+  background-color: #f26522;
+}
+
+.bar__rest {
+  background-color: #363636;
+}
+
+.about {
+  width: 90%;
+  margin: 0% auto 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.about__description {
+  grid-row: 1/3;
+  text-align: left;
+  padding-right: 5%;
+}
+
+.about__card {
+  text-align: center;
+  border: 0.5px solid rgba(221, 206, 206, 0.568);
+  margin: 0% 4% 8% 4%;
+  padding: 7% 4%;
+}
+
+.about__icon {
+  color: #f26522;
+  font-size: 60px;
+  margin: 6% 0%;
+}
+
+.about__tittle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #363636;
+  margin-bottom: 3%;
+}
+
+.about__span {
+  font-size: 20px;
+  color: #f26522;
+}
+
+.about__text {
+  font-size: 14px;
+  color: #363636;
+  line-height: 25px;
+}
+
+.about__description_text {
+  font-size: 14px;
+  color: #363636;
+  line-height: 25px;
+  margin-bottom: 5%;
+}
+
+.datos {
+  width: 100%;
+  margin: 0px auto;
+  background-image: url(../assets/img/boy-wearing-blue-shirt-sitting-on-swing-1686467.jpg);
+  background-attachment: fixed;
+  background-position: initial;
+}
+
+.datos__bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.datos__card {
+  margin: 6% 0%;
+}
+
+.datos__icon {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 3%;
+}
+
+.datos__tittle {
+  font-size: 24px;
+  color: #f26522;
+  font-weight: bolder;
+  margin-bottom: 4%;
+}
+
+.datos__text {
+  font-size: 14px;
+  color: #fff;
+}
+
+.post {
+  width: 90%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.post__tittle {
+  font-size: 22px;
+  color: #f26522;
+  margin-bottom: 2%;
+}
+
+.post__span {
+  color: #363636;
+  font-size: 22px;
+}
+
+.post__text {
+  margin-bottom: 2%;
+}
+
+.post__reciente {
+  grid-column: 1/3;
+}
+
+.post__card {
+  grid-column: 1fr;
+  margin-right: 6%;
+  border: 0.5px solid rgba(221, 206, 206, 0.568);
+}
+
+.post__img {
+  width: 100%;
+}
+
+.post__description {
+  margin: 3%;
+}
+
+.post__info {
+  margin-bottom: 2%;
+}
+
+.post__cardcalendar {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: rgba(216, 207, 207, 0.575);
+  border-bottom: 0.5px solid rgba(221, 206, 206, 0.568);
+  padding: 2% 0%;
+}
+
+.post__fecha {
+  background-color: #f26522;
+  text-align: center;
+  align-self: center;
+  padding: 15%;
+  margin: 10%;
+}
+
+.post__day {
+  color: #fff;
+}
+
+.banner {
+  width: 100%;
+  margin: 0px auto;
+  background-image: url(../assets/img/selective-focus-photography-cement-2219024.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.banner__bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 101, 34, 0.7);
+  text-align: center;
+  padding: 5% 15%;
+}
+
+.banner__tittle {
+  font-size: 40px;
+  color: #363636;
+  margin-bottom: 2%;
+}
+
+.banner__span {
+  color: #fff;
+  font-size: 40px;
+}
+
+.test {
+  width: 90%;
+  margin: 0% auto 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.test__head {
+  grid-column: 1/3;
+  text-align: center;
+  margin: 4% 0%;
+}
+
+.test__tittle {
+  font-size: 24px;
+  color: #363636;
+}
+
+.test__span {
+  font-size: 24px;
+  color: #f26522;
+}
+
+.test__text {
+  color: #363636;
+  font-size: 14px;
+  margin-bottom: 1%;
+}
+
+.test__card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1% 5%;
+}
+
+.test__img {
+  width: 100%;
+}
+
+.test__datos {
+  border: 0.5px solid rgba(221, 206, 206, 0.568);
+  padding: 4%;
+}
+
+.test__subtittle {
+  color: #363636;
+  font-size: 22px;
+  margin-bottom: 1%;
+}
+
+.test__cargo {
+  color: #f26522;
+  font-size: 18px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #363636;
+  text-align: center;
+  padding: 2%;
+  align-items: center;
+}
+
+.footer__copy {
+  color: #fff;
+}
+
+.footer__info {
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */

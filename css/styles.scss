@@ -1,0 +1,473 @@
+//FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+//VARIABLES
+$colorPrimario: #f26522;
+$colorSecundario: #363636;
+$colorPositivo: #fff;
+$colorNegativo: #000000;
+$fuente: 'Open Sans', sans-serif;
+//ESTILOS GENERALES
+* {
+  font-family: $fuente;
+  font-size: 14px;
+  color: $colorSecundario;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+//CLASES GENERALES
+%button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 100px;
+}
+
+//HEADER
+.header {
+  margin: 1% auto;
+}
+//NAVBAR
+.nav {
+  width: 90%;
+  margin: 0% auto;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1%;
+}
+
+.nav__thumbnail {
+  flex-grow: 1;
+}
+
+.nav__img {
+  width: 30%;
+}
+
+.nav__content {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.nav__ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.nav__li {
+  flex-grow: 1;
+  justify-content: center;
+  list-style: none;
+  font-weight: 300;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $colorNegativo;
+}
+
+.nav__button {
+  text-decoration: none;
+  color: $colorPositivo;
+  background-color: $colorPrimario;
+  padding: 7% 15%;
+  font-weight: 500;
+  transition: all 300ms;
+  &:hover {
+    background-color: $colorSecundario;
+  }
+}
+
+//PRESENTACION
+.image {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.image__img {
+  width: 100%;
+}
+
+.description {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 45%;
+}
+
+.description__tittle {
+  font-size: 35px;
+  color: $colorPrimario;
+}
+
+.description__subtittle {
+  font-size: 50px;
+  color: $colorPrimario;
+}
+
+.description__span {
+  font-size: 50px;
+  color: $colorPositivo;
+}
+
+.description__text {
+  font-size: 14px;
+  color: $colorPositivo;
+  margin-bottom: 5%;
+}
+
+.button--orange {
+  @extend %button;
+  background-color: $colorPrimario;
+  margin: 1%;
+  transition: all 300ms;
+  &:hover {
+    background-color: $colorSecundario;
+  }
+}
+
+//INFORMACION GENERAL
+.info {
+  width: 90%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+
+.info__card1 {
+  background-image: url(../assets/img/siblings-817369_640.jpg);
+  background-position: center;
+}
+
+.info__card2 {
+  background-image: url(../assets/img/pair-3798371_1280.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.opacity-orange {
+  background-color: rgba($colorPrimario, $alpha: 0.9);
+  padding: 7%;
+  height: 100%;
+}
+
+.opacity-gray {
+  background-color: rgba($colorNegativo, $alpha: 0.7);
+  padding: 4%;
+  height: 100%;
+}
+
+.info__tittle {
+  color: $colorSecundario;
+  font-size: 24px;
+  padding-bottom: 1%;
+}
+
+.info__subtittle {
+  color: $colorPositivo;
+  font-size: 20px;
+  padding-bottom: 2%;
+}
+
+.info__text {
+  color: $colorPositivo;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.info__tittle2 {
+  color: $colorPrimario;
+  font-size: 24px;
+  padding-bottom: 1%;
+}
+.button--gray {
+  @extend %button;
+  background-color: $colorSecundario;
+  margin: 1%;
+  transition: all 300ms;
+  &:hover {
+    background-color: $colorPositivo;
+    color: $colorNegativo;
+  }
+}
+
+//BARRA DE PROGRESO
+.bar {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 100%;
+  height: 15px;
+  margin: 0px auto;
+  margin-bottom: 13px;
+}
+
+.bar__progress {
+  background-color: $colorPrimario;
+}
+
+.bar__rest {
+  background-color: $colorSecundario;
+}
+
+//ABOUT US
+.about {
+  width: 90%;
+  margin: 0% auto 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.about__description {
+  grid-row: 1/3;
+  text-align: left;
+  padding-right: 5%;
+}
+
+.about__card {
+  text-align: center;
+  border: 0.5px solid rgba(221, 206, 206, 0.568);
+  margin: 0% 4% 8% 4%;
+  padding: 7% 4%;
+}
+
+.about__icon {
+  color: $colorPrimario;
+  font-size: 60px;
+  margin: 6% 0%;
+}
+
+.about__tittle {
+  font-size: 20px;
+  font-weight: 600;
+  color: $colorSecundario;
+  margin-bottom: 3%;
+}
+
+.about__span {
+  font-size: 20px;
+  color: $colorPrimario;
+}
+
+.about__text {
+  font-size: 14px;
+  color: $colorSecundario;
+  line-height: 25px;
+}
+
+.about__description_text {
+  font-size: 14px;
+  color: $colorSecundario;
+  line-height: 25px;
+  margin-bottom: 5%;
+}
+
+//DATOS DE REELEVANCIA
+.datos {
+  width: 100%;
+  margin: 0px auto;
+  background-image: url(../assets/img/boy-wearing-blue-shirt-sitting-on-swing-1686467.jpg);
+  background-attachment: fixed;
+  background-position: initial;
+}
+
+.datos__bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba($colorNegativo, $alpha: 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.datos__card {
+  margin: 6% 0%;
+}
+
+.datos__icon {
+  color: $colorPositivo;
+  font-size: 50px;
+  margin-bottom: 3%;
+}
+
+.datos__tittle {
+  font-size: 24px;
+  color: $colorPrimario;
+  font-weight: bolder;
+  margin-bottom: 4%;
+}
+
+.datos__text {
+  font-size: 14px;
+  color: $colorPositivo;
+}
+
+//EVENTOS Y POSTS
+.post {
+  width: 90%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.post__tittle {
+  font-size: 22px;
+  color: $colorPrimario;
+  margin-bottom: 2%;
+}
+
+.post__span {
+  color: $colorSecundario;
+  font-size: 22px;
+}
+
+.post__text {
+  margin-bottom: 2%;
+}
+
+.post__reciente {
+  grid-column: 1/3;
+}
+
+.post__card {
+  grid-column: 1fr;
+  margin-right: 6%;
+  border: 0.5px solid rgba(221, 206, 206, 0.568);
+}
+
+.post__img {
+  width: 100%;
+}
+
+.post__description {
+  margin: 3%;
+}
+
+.post__info {
+  margin-bottom: 2%;
+}
+
+.post__cardcalendar {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: rgba(216, 207, 207, 0.575);
+  border-bottom: 0.5px solid rgba(221, 206, 206, 0.568);
+  padding: 2% 0%;
+}
+
+.post__fecha {
+  background-color: $colorPrimario;
+  text-align: center;
+  align-self: center;
+  padding: 15%;
+  margin: 10%;
+}
+
+.post__day {
+  color: $colorPositivo;
+}
+
+//BANNER
+
+.banner {
+  width: 100%;
+  margin: 0px auto;
+  background-image: url(../assets/img/selective-focus-photography-cement-2219024.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.banner__bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba($colorPrimario, $alpha: 0.7);
+  text-align: center;
+  padding: 5% 15%;
+}
+
+.banner__tittle {
+  font-size: 40px;
+  color: $colorSecundario;
+  margin-bottom: 2%;
+}
+
+.banner__span {
+  color: $colorPositivo;
+  font-size: 40px;
+}
+
+///TESTIMONIOS
+.test {
+  width: 90%;
+  margin: 0% auto 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.test__head {
+  grid-column: 1/3;
+  text-align: center;
+  margin: 4% 0%;
+}
+
+.test__tittle {
+  font-size: 24px;
+  color: $colorSecundario;
+}
+
+.test__span {
+  font-size: 24px;
+  color: $colorPrimario;
+}
+
+.test__text {
+  color: $colorSecundario;
+  font-size: 14px;
+  margin-bottom: 1%;
+}
+
+.test__card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1% 5%;
+}
+
+.test__img {
+  width: 100%;
+}
+
+.test__datos {
+  border: 0.5px solid rgba(221, 206, 206, 0.568);
+  padding: 4%;
+}
+
+.test__subtittle {
+  color: $colorSecundario;
+  font-size: 22px;
+  margin-bottom: 1%;
+}
+
+.test__cargo {
+  color: $colorPrimario;
+  font-size: 18px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $colorSecundario;
+  text-align: center;
+  padding: 2%;
+  align-items: center;
+}
+
+.footer__copy {
+  color: $colorPositivo;
+}
+
+.footer__info {
+  color: $colorPositivo;
+}
